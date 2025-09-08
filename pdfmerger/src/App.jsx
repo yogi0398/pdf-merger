@@ -66,7 +66,7 @@ function App() {
       for (const file of files) {
         data.append('pdf', file.file);
       }
-      const response = await fetch("http://localhost:3000/upload", {
+      const response = await fetch("https://pdf-merger-21uq.onrender.com/upload", {
         method: 'POST',
         body: data
       });
